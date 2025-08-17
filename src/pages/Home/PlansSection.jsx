@@ -24,7 +24,7 @@ const PlansSection = () => {
                 🏷️ Choose Your Plan
             </h2>
 
-            <Slide direction="right" duration={3000}>
+            <Slide cascade direction="right" duration={3000} triggerOnce={true}>
                 <div className="px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Free Plan */}
                     <div className="border border-primary rounded-lg shadow p-8 flex flex-col justify-between hover:shadow-lg transition">

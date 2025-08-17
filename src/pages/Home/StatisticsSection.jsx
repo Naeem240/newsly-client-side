@@ -25,7 +25,7 @@ const StatisticsSection = () => {
             <h2 className="text-3xl font-bold mb-8 text-center">
                 📊 Our Community Statistics
             </h2>
-            <Slide cascade duration={3000}>
+            <Slide cascade direction="left" duration={3000} triggerOnce={true}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-6 lg:px-8">
                     <div className="text-center bg-base-200 shadow-md rounded-lg p-6 border-2 border-primary">
                         <h3 className="text-xl font-semibold mb-2">Total Users</h3>
