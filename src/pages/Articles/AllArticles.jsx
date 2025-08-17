@@ -113,7 +113,7 @@ const AllArticles = () => {
                 <title>All Articles</title>
             </Helmet>
 
-            <div className="max-w-7xl mx-auto px-4 py-20 text-center">
+            <div className="px-4 md:px-6 lg:px-8 py-20 text-center">
                 <h2 className="text-3xl font-bold mb-6 text-primary">📰 All Articles</h2>
 
                 {/* Filters */}

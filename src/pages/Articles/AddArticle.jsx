@@ -113,7 +113,7 @@ const AddArticle = () => {
     <Helmet>
       <title>Add Article || NewsHub</title>
     </Helmet>
-    <div className="max-w-4xl mx-auto px-4 py-20">
+    <div className="px-4 md:px-6 lg:px-8 py-20">
       <h2 className="text-3xl font-bold mb-6 text-center text-primary">📝 Add New Article</h2>
       <form onSubmit={handleSubmit} className="bg-base-200 p-6 rounded shadow space-y-4">
         <input name="title" type="text" required placeholder="Article Title" className="input input-bordered w-full" />

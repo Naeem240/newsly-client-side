@@ -76,7 +76,7 @@ const ArticleDetails = () => {
             <Helmet>
                 <title>Article Details || NewsHub</title>
             </Helmet>
-            <div className="max-w-5xl mx-auto px-4 py-20">
+            <div className="px-4 md:px-6 lg:px-8 py-20">
                 <h2 className="text-3xl font-bold mb-4">{article?.title}</h2>
                 <img
                     src={article?.image}

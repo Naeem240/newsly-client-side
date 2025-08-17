@@ -55,9 +55,9 @@ const MyArticles = () => {
             <Helmet>
                 <title>My Articles || NewsHub</title>
             </Helmet>
-            <div className="overflow-x-auto p-4">
+            <div className="overflow-x-auto py-4">
                 <h2 className="text-2xl font-bold mb-4">📑 My Articles</h2>
-                <table className="table w-full">
+                <table className="table px-4 md:px-6 lg:px-8 mx-auto">
                     <thead>
                         <tr>
                             <th>#</th>

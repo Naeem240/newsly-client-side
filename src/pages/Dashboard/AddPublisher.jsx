@@ -47,7 +47,7 @@ const AddPublisher = () => {
         Add Publisher || Admin || NewsHub
       </title>
     </Helmet>
-      <div className="max-w-lg mx-auto p-4 mt-10 bg-base-200 shadow rounded">
+      <div className="max-w-lg mx-auto p-4 mt-10 bg-base-200 shadow rounded border md:ml-70">
         <h2 className="text-2xl font-bold mb-6">Add New Publisher</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
