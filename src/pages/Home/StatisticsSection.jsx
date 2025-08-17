@@ -21,12 +21,12 @@ const StatisticsSection = () => {
 
     return (
 
-        <div className="bg-base-100 py-12">
+        <div className="bg-base-100 py-10">
             <h2 className="text-3xl font-bold mb-8 text-center">
                 📊 Our Community Statistics
             </h2>
             <Slide cascade duration={3000}>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-6 lg:px-8">
                     <div className="text-center bg-base-200 shadow-md rounded-lg p-6 border-2 border-primary">
                         <h3 className="text-xl font-semibold mb-2">Total Users</h3>
                         <p className="text-4xl font-bold text-blue-600">

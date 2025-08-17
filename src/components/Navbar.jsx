@@ -80,7 +80,7 @@ const Navbar = () => {
 
     return (
         <div className="bg-transparent backdrop-blur-3xl backdrop-brightness-50 shadow-md fixed w-full z-50">
-            <div className="container mx-auto flex justify-between items-center py-3 px-2 lg:px-6 transition-all animate-slide-in">
+            <div className="px-4 md:px-6 lg:px-8 flex justify-between items-center py-3 transition-all animate-slide-in">
                 {/* Logo */}
                 <NewsHubLogo />
 
