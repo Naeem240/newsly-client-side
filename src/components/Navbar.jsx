@@ -79,13 +79,13 @@ const Navbar = () => {
     }
 
     return (
-        <div className="bg-base-200 shadow-md fixed w-full z-50">
-            <div className="container mx-auto flex justify-between items-center py-3 px-4 lg:px-10 transition-all animate-slide-in">
+        <div className="bg-transparent backdrop-blur-3xl backdrop-brightness-50 shadow-md fixed w-full z-50">
+            <div className="container mx-auto flex justify-between items-center py-3 px-2 lg:px-6 transition-all animate-slide-in">
                 {/* Logo */}
                 <NewsHubLogo />
 
                 {/* Desktop Menu */}
-                <ul className="hidden lg:flex gap-6 items-center font-semibold [&_li]:hover:text-primary [&_li]:font-bold [&_li]:transition-all [&_li]:duration-700">
+                <ul className="hidden lg:flex gap-6 items-center text-gray-100 font-semibold [&_li]:hover:text-primary [&_li]:font-bold [&_li]:transition-all [&_li]:duration-700">
                     {navLinks}
                 </ul>
                 {
@@ -108,13 +108,13 @@ const Navbar = () => {
 
                                 <button
                                     onClick={handleLogout}
-                                    className="btn btn-sm btn-outline btn-primary"
+                                    className="btn btn-sm btn-outline btn-primary text-gray-100"
                                 >
                                     Logout
                                 </button>
                             </div>
                         ) : (
-                            <div className="hidden lg:flex gap-6 items-center font-semibold">
+                            <div className="hidden lg:flex gap-6 items-center font-semibold text-gray-100">
                                 <NavLink to="/auth/login">Login</NavLink>
                                 <NavLink to="/auth/register">Register</NavLink>
                             </div>
