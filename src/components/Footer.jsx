@@ -10,7 +10,7 @@ const Footer = () => {
                 <div>
                     <NewsHubLogo/>
                     <p className="mt-4 text-gray-400">
-                        Your trusted source for the latest articles, premium insights, and trending news.
+                        Your trusted sources for the latest articles, premium insights, and trending news.
                     </p>
                 </div>
 
