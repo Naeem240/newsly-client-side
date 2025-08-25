@@ -44,7 +44,7 @@ const Profile = () => {
             <Helmet>
                 <title>My Profile || NewsHub</title>
             </Helmet>
-            <div className="max-w-xl mx-auto py-20 px-4">
+            <div className="px-4 md:px-6 lg:px-8 py-20">
                 <h2 className="text-3xl font-bold mb-6 text-center">👤 My Profile</h2>
 
                 <form

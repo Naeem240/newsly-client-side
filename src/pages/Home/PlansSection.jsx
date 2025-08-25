@@ -19,10 +19,8 @@ const PlansSection = () => {
     ];
 
     return (
-        <div className="bg-base-200 py-16">
-            <h2 className="text-3xl font-bold text-center mb-10 text-primary">
-                🏷️ Choose Your Plan
-            </h2>
+        <div className="bg-base-200 py-20">            
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center border-b pb-4 border-primary text-primary">🏷️ Choose Your Plan</h2>
 
             <Slide cascade direction="right" duration={3000} triggerOnce={true}>
                 <div className="px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">

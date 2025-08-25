@@ -11,10 +11,8 @@ const PublishersSection = () => {
   }
 
   return (
-    <div className="bg-base-200 py-10">
-      <h2 className="text-3xl font-bold mb-10 text-center text-primary">
-        📰 Our Trusted Publishers
-      </h2>
+    <div className="bg-base-200 py-20">      
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center border-b pb-4 border-primary text-primary">📰 Our Trusted Publishers</h2>
 
       <Marquee
         gradient={false}

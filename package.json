@@ -13,6 +13,7 @@
     "@tanstack/react-query": "^5.81.5",
     "axios": "^1.10.0",
     "firebase": "^11.10.0",
+    "framer-motion": "^12.23.12",
     "motion": "^12.23.0",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",
