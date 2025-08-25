@@ -8,6 +8,7 @@ import { AuthContext } from './AuthContext';
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
+    const [theme, setTheme] = useState(false);
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const [isPremium, setIsPremium] = useState(false);
@@ -88,7 +89,9 @@ const AuthProvider = ({ children }) => {
         updateUserProfile,
         logOut,
         isPremium,
-        setIsPremium
+        setIsPremium,
+        theme, 
+        setTheme
     };
 
     return (

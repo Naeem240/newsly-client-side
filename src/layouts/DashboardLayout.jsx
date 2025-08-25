@@ -1,13 +1,16 @@
 import { Link, Outlet } from "react-router";
 import NewsHubLogo from "../components/NewsHubLogo";
-import { useState } from "react";
+import { use, useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { AuthContext } from "../contexts/AuthContext";
 
 const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  const {theme} = use(AuthContext)
+
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <div data-theme={`${theme?'light':'dark'}`} className="flex flex-col md:flex-row min-h-screen">
       {/* Mobile Top Navbar */}
       <div className="flex items-center justify-between bg-gray-800 text-gray-100 p-4 md:hidden">
         <NewsHubLogo />

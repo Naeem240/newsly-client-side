@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router";
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaLightbulb, FaThemeco, FaTimes } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
 import NewsHubLogo from "./NewsHubLogo";
@@ -9,7 +9,7 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import Loading from "./Loading";
 
 const Navbar = () => {
-    const { user, logOut, isPremium, setIsPremium, loading } = useAuth();
+    const { user, logOut, isPremium, setIsPremium, loading, theme, setTheme } = useAuth();
     const axiosSecure = useAxiosSecure();
     const [isAdmin, setIsAdmin] = useState(false); // Replace with actual logic from DB or API
     const [menuOpen, setMenuOpen] = useState(false);
@@ -80,14 +80,14 @@ const Navbar = () => {
 
     return (
         <div className="bg-transparent backdrop-blur-3xl backdrop-brightness-50 shadow-md fixed w-full z-50">
+            <div onClick={()=>setTheme(!theme)} className="cursor-pointer fixed right-5 top-138 "><FaLightbulb className="size-10 bg-green-400 rounded-full p-2" /></div>
             <div className="px-4 md:px-6 lg:px-8 flex justify-between items-center py-3 transition-all animate-slide-in">
                 {/* Logo */}
                 <NewsHubLogo />
-
                 {/* Desktop Menu */}
                 <ul className="hidden lg:flex gap-6 items-center text-gray-100 font-semibold [&_li]:hover:text-primary [&_li]:font-bold [&_li]:transition-all [&_li]:duration-700">
                     {navLinks}
-                </ul>
+                </ul>                
                 {
                     isLoading || loading ? <Loading /> :
                         user ? (
